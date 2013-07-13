@@ -4,8 +4,9 @@ var buffer = new Buffer(str);
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
+  var out = buffer;
   buffer.write(fs.readFile('index.html'));
-  response.send(buffer.toString('utf-8'));
+  response.send(out.toString('utf-8'));
 
 
 });
