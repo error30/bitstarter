@@ -7,7 +7,7 @@ var HTMLFILE_DEFAULT = "index.html";
 var CHECKSFILE_DEFAULT = "checks.json";
 var sys = require('util');
 var rest = require('restler');
-var URL_DEFAULT = "http://infinite-badlands-5939.herokuapp.com/";
+var URL_DEFAULT = "http://thawing-retreat-7259.herokuapp.com/";
 var assertUrlExists = function (val) {return val.toString();};
 
   var clone = function(fn) {
